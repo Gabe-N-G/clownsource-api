@@ -1,0 +1,2 @@
+class MadlibsController < ApplicationController
+end
