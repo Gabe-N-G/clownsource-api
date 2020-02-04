@@ -1,3 +1,3 @@
 class QuestionSerializer < ActiveModel::Serializer
-  attributes :id, :identifier, :text, :template_id
+  attributes :id, :template_id, :identifier, :text 
 end
