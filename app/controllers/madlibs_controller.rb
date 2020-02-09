@@ -26,10 +26,16 @@ class MadlibsController < ApplicationController
             render json: madlib, except: [:created_at, :updated_at]
     end
 
-    # private
+    def destroy
+        madlib = Madlib.find.(params[:id])
+        madlib.destroy
+    end
 
-    # def madlib_params
-    #     params.require(:madlib).permit(:user_id, :template_id,)
-    # end
+
+#     # private
+
+#     # def madlib_params
+#     #     params.require(:madlib).permit(:user_id, :template_id,)
+#     # end
 end
 

@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :madlibs
+  # delete "/madlibs/:id", to: 'madlibs#destroy'
   resources :questions
   resources :templates
   resources :users
