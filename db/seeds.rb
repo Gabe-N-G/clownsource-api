@@ -7,7 +7,11 @@
 # Question.destroy_all
 # puts "questions deleted?"
 
-
+# resignation questions = 22
+# artist statement = 17
+# cover letter = 28
+# dating app profile = 18
+# linkedin summary = 22
 
 # User.create(name: 'Gabe', color: "blue", font: "comic_sans")
 
@@ -27,68 +31,70 @@
 
 
 # ********************************************************
-# NEXT TEMPLATE_ID FOR QUESTIONS ====== 10!!!!!!!!!!!!!!!!!
+# NEXT TEMPLATE_ID FOR QUESTIONS ====== 12!!!!!!!!!!!!!!!!!
 # ********************************************************
 
 puts "trying to seed db"
 
-Template.create(
-    title: 'resignation',
-    displaytext: 'Dear (name),
+# Template.create(
+#     title: 'funny_obit',
+#     displaytext: '(your name), an unemployed lay-about and occasional (noun), died suddenly in a compromising position at a (type of place) on (current date) of exactly what you would expect. They would like you to believe that they were still (number) years old.
 
-    It is with great (mood) that I ask you to accept this (noun) as my official resignation from (company).
+#     (your name) was born in (state/place) on (month, day year) to (first name) and (first name) Doe, and was almost immediately a disappointment. They kept this up by becoming a (job) by age (number), rather than a (job), as their (parental unit/mentor) wanted. They graduated from (name of school) in (year) with a degree in (degree) that provided them with nothing but another way to say smart-aleck things, as well as about (number),000 dollars worth of debt.
     
-    My last day here will be (day/time), after which I will be taking a position with (company).
-    
-    As you know, for some time now I have been desiring (goal), and thus I feel the time has arrived for me to (verb). And of course, I would not be forthright if I failed to mention how much it (feeling) me to see some of the (actions) (corporate rank) has made in recent (measurement of time).
-    
-    For example, I found (decision company has made) to be (adjective). Furthermore, as I have watched (corporate rank) (verb) once-valuable properties such as (noun),  I have come to (verb) that management does not seem to fully understand (noun).
-    
-    Thus, I am tendering my resignation as of today. If you would like me to (verb), I will be glad to do so, seeing as I am now a (new job).
-    
-    (signoff type)
-    (your name)',
+#     (your name) had no feelings, whatsoever, on the subject of (proper noun).
 
-    text: 'Dear _,
+#     They are survived by their ex-(husband/wife), (name); their daughter, (female name); their son-in-law, (male name) Daniels; and (famous person), whom they hope will mourn them appropriately. They are preceded in death by almost every person who ever lived on this planet, including (famous dead person), (famous dead person) and the comic genius, (famous dead person).
 
-    It is with great _ that I ask you to accept this _ as my official resignation from _.
+#     They will greatly miss the taste of (plural noun).',
     
-    My last day here will be _, after which I will be taking a position with _.
-    
-    As you know, for some time now I have been desiring _, and thus I feel the time has arrived for me to _. And of course, I would not be forthright if I failed to mention how much it _ me to see some of the _ _ has made in recent _.
-    
-    For example, I found _ to be _. Furthermore, as I have watched _ _ once-valuable properties such as _,  I have come to _ that management does not seem to fully understand _.
-    
-    Thus, I am tendering my resignation as of today. If you would like me to _, I will be glad to do so, seeing as I am now a _.
-    
-    _
-    _
-    ',
-)
 
-Question.create(template_id: 9, identifier: "resignation_1", text: "boss name")
-Question.create(template_id: 9, identifier: "resignation_2", text: "mood")
-Question.create(template_id: 9, identifier: "resignation_3", text: "noun")
-Question.create(template_id: 9, identifier: "resignation_4", text: "company")
-Question.create(template_id: 9, identifier: "resignation_5", text: "day/time")
-Question.create(template_id: 9, identifier: "resignation_6", text: "company")
-Question.create(template_id: 9, identifier: "resignation_7", text: "goal")
-Question.create(template_id: 9, identifier: "resignation_8", text: "verb")
-Question.create(template_id: 9, identifier: "resignation_9", text: "feeling")
-Question.create(template_id: 9, identifier: "resignation_10", text: "actions")
-Question.create(template_id: 9, identifier: "resignation_11", text: "corporate rank")
-Question.create(template_id: 9, identifier: "resignation_12", text: "measurement of time")
-Question.create(template_id: 9, identifier: "resignation_13", text: "decision company has made")
-Question.create(template_id: 9, identifier: "resignation_14", text: "adjective")
-Question.create(template_id: 9, identifier: "resignation_15", text: "corporate rank")
-Question.create(template_id: 9, identifier: "resignation_16", text: "verb")
-Question.create(template_id: 9, identifier: "resignation_17", text: "noun")
-Question.create(template_id: 9, identifier: "resignation_18", text: "verb")
-Question.create(template_id: 9, identifier: "resignation_19", text: "noun")
-Question.create(template_id: 9, identifier: "resignation_20", text: "verb")
-Question.create(template_id: 9, identifier: "resignation_21", text: "new job")
-Question.create(template_id: 9, identifier: "resignation_22", text: "sign off type")
-Question.create(template_id: 9, identifier: "resignation_23", text: "your name")
+#     text: '_, an unemployed lay-about and occasional _, died suddenly in a compromising position at a _ on _ of exactly what you would expect. They would like you to believe that they were still _ years old.
+
+#     _ was born in _ on _ to _ and _ Doe, and was almost immediately a disappointment. They kept this up by becoming a _ by age _, rather than a _, as their _ wanted. They graduated from _ in _ with a degree in _ that provided them with nothing but another way to say smart-aleck things, as well as about _,000 dollars worth of debt.
+    
+#     _ had no feelings, whatsoever, on the subject of _.
+
+#     They are survived by their ex-_, _; their daughter, _; their son-in-law, _ Daniels; and _, whom they hope will mourn them appropriately. They are preceded in death by almost every person who ever lived on this planet, including _, _ and the comic genius, _.
+
+#     They will greatly miss the taste of _.'
+    
+# )
+
+Question.create(template_id: 17, identifier: "obit_1", text: "your name")
+Question.create(template_id: 17, identifier: "obit_2", text: "noun")
+Question.create(template_id: 17, identifier: "obit_3", text: "type of place")
+Question.create(template_id: 17, identifier: "obit_4", text: "current date")
+Question.create(template_id: 17, identifier: "obit_5", text: "number")
+Question.create(template_id: 17, identifier: "obit_6", text: "your name")
+Question.create(template_id: 17, identifier: "obit_7", text: "state/place")
+Question.create(template_id: 17, identifier: "obit_8", text: "month, day year")
+Question.create(template_id: 17, identifier: "obit_9", text: "first name")
+Question.create(template_id: 17, identifier: "obit_10", text: "first name")
+Question.create(template_id: 17, identifier: "obit_11", text: "job")
+Question.create(template_id: 17, identifier: "obit_12", text: "number")
+Question.create(template_id: 17, identifier: "obit_13", text: "job")
+Question.create(template_id: 17, identifier: "obit_14", text: "parental unit/mentor")
+Question.create(template_id: 17, identifier: "obit_15", text: "name of school")
+Question.create(template_id: 17, identifier: "obit_16", text: "year")
+Question.create(template_id: 17, identifier: "obit_17", text: "degree")
+Question.create(template_id: 17, identifier: "obit_18", text: "number")
+Question.create(template_id: 17, identifier: "obit_19", text: "your name")
+Question.create(template_id: 17, identifier: "obit_20", text: "proper noun")
+Question.create(template_id: 17, identifier: "obit_21", text: "husband/wife")
+Question.create(template_id: 17, identifier: "obit_22", text: "name")
+Question.create(template_id: 17, identifier: "obit_23", text: "female name")
+Question.create(template_id: 17, identifier: "obit_24", text: "male name")
+Question.create(template_id: 17, identifier: "obit_25", text: "famous person")
+Question.create(template_id: 17, identifier: "obit_26", text: "famous dead person")
+Question.create(template_id: 17, identifier: "obit_27", text: "famous dead person")
+Question.create(template_id: 17, identifier: "obit_28", text: "famous dead person")
+Question.create(template_id: 17, identifier: "obit_29", text: "plural noun")
+
+
+
+
+
 
 
 puts "seeded db?"

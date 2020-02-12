@@ -25,7 +25,6 @@ ActiveRecord::Schema.define(version: 2020_01_31_162337) do
 
   create_table "questions", force: :cascade do |t|
     t.integer "template_id"
-    
     t.string "identifier"
     t.string "text"
     t.datetime "created_at", precision: 6, null: false

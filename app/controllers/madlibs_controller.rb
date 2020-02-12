@@ -27,8 +27,9 @@ class MadlibsController < ApplicationController
     end
 
     def destroy
-        madlib = Madlib.find.(params[:id])
+        madlib = Madlib.find(params[:id])
         madlib.destroy
+        render json: madlib, except: [:created_at, :updated_at]
     end
 
 
